@@ -1,0 +1,18 @@
+temperatura = 30  #int
+presion = 2.6  #float
+habitacion = 'Cocina' #string/str
+hornalla =  True #bool
+
+nivelTanque=100 
+contrasenia= "sadasd33"
+boton = False
+
+nume= 0
+nume = print("Digite un número cualquiera")
+if (nume == 0): 
+    print('su número es 0')
+elif(nume%2=0):
+    print(nume+' es un número par')
+else:
+    print(nume+' es un número impar')
+
