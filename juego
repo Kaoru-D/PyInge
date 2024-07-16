@@ -4,8 +4,7 @@ adivino= False
 
 while not adivino:
 
-    numeroUsu= int(input('Ya tengo un número entre 1 y 10, ¿Cuál crees que es? ')
-)
+    numeroUsu= int(input('Ya tengo un número entre 1 y 10, ¿Cuál crees que es? '))
     if numeroRan == numeroUsu:
         print('Felicitaciones!!')
         adivino=True
