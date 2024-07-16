@@ -1,25 +1,26 @@
-from random import Random
-numeroRan= Random
+import random 
+numeroRan= random.randint(1,10)
 adivino= False
 
 while not adivino:
 
-    numeroUsu= print('Ya tengo un número, ¿Cuál crees que es?')
-
+    numeroUsu= int(input('Ya tengo un número entre 1 y 10, ¿Cuál crees que es? ')
+)
     if numeroRan == numeroUsu:
         print('Felicitaciones!!')
         adivino=True
-    elif (numeroUsu>numeroRan):
-        print('Su número es muy alto, sigue intentando')
+    elif (numeroUsu > numeroRan):
+        print('Más abajo')
     else:
-        print('Su número es muy pequeño, sigue intentando')
+        print('Más arriba')
+
 
 
 #Ejercicio 1
 print('Máquina para hallar el mayor número entre 3 diferentes')
-num1=print('ingrese el primer número')
-num2=print('ingrese el segundo número')
-num3=print('ingrese el tercer número')
+num1=float(input('ingrese el primer número '))
+num2=float(input('ingrese el segundo número '))
+num3=float(input('ingrese el tercer número '))
 
 if (num1>num2):
     mayor=num1
@@ -28,18 +29,19 @@ else:
     mayor = max(num2, num3)
 print(f'El número mayor entre los tres número es: {mayor}')
 
-#Ejercicio 2
+ #Ejercicio 2
 factorial=0
-num1=print('Digite un número al cuál desea saber el factorial')
-for each in x==num1:
-     factorial=factorial*x
-     x=x-1
-print(f'El factorial de { num1}  es  {factorial}')
+num=int(input('Digite un número al cuál desea saber el factorial '))
+x1=num
+while x1>0:
+    factorial=factorial*x1
+    x1=x1-1
+print(f'El factorial de { num1}  es  {factorial}') 
 
 #Ejercicio 3
 print('Vamos a hallar el área de un triángulo')
-base=print('Ingrese la base')
-altura=print('Ingrese la altura')
+base=input('Ingrese la base ')
+altura=input('Ingrese la altura ')
 
 area=0.5*base*altura
-print(f'El área de su triángulo es  {area}')
+print('El área de su triángulo es',  area)

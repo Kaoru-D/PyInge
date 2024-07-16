@@ -1,26 +1,27 @@
+# sourcery skip: remove-redundant-pass
 """ temperatura = 30  #int
 presion = 2.6  #float
 habitacion = 'Cocina' #string/str
 hornalla =  True #bool """
 
-
-num1=0
-num1=print('digite un número')
-if (num1==0):
+num1 = 0
+num1 = int(input('digite un número '))
+if (num1 == 0):
     print('su número es 0')
-    if (num1 % 2==0):
-        print(f'{num1} es un número par')
-    else:
-        print(f'{num1}es un número impar')
-
-
-suma=0
-comienzo=0
-num1=print('Digite un número positivo cualquiera el cual desea saber la suma entre estos')
-if num1<=0:
-    print('Por favor ingrese un número mayor a 0')
-    pass
-for comienzo in num1:
-    suma=suma+comienzo
     
-print(f'la suma de todos los valores hasta {num1} es: {suma}')
+elif (num1%2 == 0):
+    print(num1, 'es un número par')
+else:
+    print(num1, ' es un número impar')
+
+suma = 0
+comienzo = 0
+num1 = int(input('Digite un número positivo cualquiera el cual desea saber la suma entre estos '))
+if (num1 <= 0):
+    print('Por favor ingrese un número mayor a 0')
+x=num1
+while x>0:
+    suma = suma + x
+    x=x-1
+    
+print('la suma de todos los valores hasta',num1,' es: ',suma)
