@@ -1,46 +1,52 @@
+from pickle import TRUE
 import random 
-numeroRan= random.randint(1,10)
-adivino= False
+numeroRan = random.randint(1, 30)
+adivino = False
+contador = 5
 
 while not adivino:
 
-    numeroUsu= int(input('Ya tengo un número entre 1 y 10, ¿Cuál crees que es? '))
+    numeroUsu = int(input('Ya tengo un número entre 1 y 30, te doy 5 intentos ¿Cuál crees que es? '))
     if numeroRan == numeroUsu:
         print('Felicitaciones!!')
-        adivino=True
+        adivino = True 
     elif (numeroUsu > numeroRan):
         print('Más abajo')
     else:
         print('Más arriba')
+    contador = contador - 1
+    if(contador < 3):
+        if(contador != 0):
+            print('te quedan ', contador, ' intentos más')
+    if(contador == 0):
+        print ('Lo siento se te acabaron las oportunidades \nEl número era', numeroRan)
 
-
-
-#Ejercicio 1
+# Ejercicio 1
 print('Máquina para hallar el mayor número entre 3 diferentes')
-num1=float(input('ingrese el primer número '))
-num2=float(input('ingrese el segundo número '))
-num3=float(input('ingrese el tercer número '))
+num1 = float(input('ingrese el primer número '))
+num2 = float(input('ingrese el segundo número '))
+num3 = float(input('ingrese el tercer número '))
 
-if (num1>num2):
-    mayor=num1
+if (num1 > num2):
+    mayor = num1
     mayor = max(num1, num3)
 else:
     mayor = max(num2, num3)
 print(f'El número mayor entre los tres número es: {mayor}')
 
- #Ejercicio 2
-factorial=0
-num=int(input('Digite un número al cuál desea saber el factorial '))
-x1=num
-while x1>0:
-    factorial=factorial*x1
-    x1=x1-1
+ # Ejercicio 2
+factorial = 0
+num = int(input('Digite un número al cuál desea saber el factorial '))
+x1 = num
+while x1 > 0:
+    factorial = factorial * x1
+    x1 = x1 - 1
 print(f'El factorial de { num1}  es  {factorial}') 
 
-#Ejercicio 3
+# Ejercicio 3
 print('Vamos a hallar el área de un triángulo')
-base=input('Ingrese la base ')
-altura=input('Ingrese la altura ')
+base = input('Ingrese la base ')
+altura = input('Ingrese la altura ')
 
-area=0.5*base*altura
-print('El área de su triángulo es',  area)
+area = 0.5 * base * altura
+print('El área de su triángulo es', area)
