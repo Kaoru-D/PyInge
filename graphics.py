@@ -21,7 +21,7 @@ plt.plot(x, fx)
 
 def importarArchivos(ruta):
     with open(ruta) as archivo:
-    contenido = [int(fila) for fila in open(ruta).readlines()]
+        contenido = [int(fila) for fila in open(ruta).readlines()]
     archivo.close()
     return contenido
 sensor = importarArchivos("sensor.txt")
