@@ -2,7 +2,7 @@ import math
 
 radio=2
 def CalcularAreaCirculo(radio):
-    areaCirculo=math.pi**(radio**2)
+    areaCirculo=math.pi*(radio**2)
     print(areaCirculo)
 
 CalcularAreaCirculo(2)
